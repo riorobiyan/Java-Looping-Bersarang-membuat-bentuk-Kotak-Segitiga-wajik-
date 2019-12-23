@@ -1,0 +1,139 @@
+package com.tutorial;
+
+
+public class Main {
+   public static void main(String[] args){
+       System.out.println("===Looping Bersarang===");
+
+       //bentuk kotak
+       //awal
+       System.out.println("===Bentuk Kotak===");
+       for(int i = 0;i < 5;i++){
+           for(int j = 0;j < 5;j++){
+               System.out.print("* ");
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+         //akhir kotak
+
+       //segitiga siku-siku
+       System.out.println("===Siku siku===");
+       for(int i = 0;i < 5;i++) {
+           for (int j = 0; j < 5; j++) {
+               System.out.print("* ");
+               if (i == j) {
+                   break;
+               }
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+       // akhir
+
+       //segitiga siku-siku 2
+       System.out.println("===Siku siku2===");
+       for(int i = 0;i < 5;i++) {
+           for (int j = 0; j < 5; j++) {
+               System.out.print("* ");
+               if ((i+j) == 4) {
+                   break;
+               }
+           }
+           System.out.print("\n");
+       }
+       // akhir
+       
+       //segitiga siku-siku 3
+       System.out.println("===Siku siku 3===");
+       for(int i = 0;i < 5;i++){
+           for(int j = 0;j < 5;j++){
+               if ((i+j < 4)){
+                   System.out.print("  ");
+               }else{
+                   System.out.print("* ");
+               }
+
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+  // akhir
+       //segitiga siku-siku 4
+       System.out.println("===Siku siku 3===");
+       for(int i = 0;i < 5;i++){
+           for(int j = 0;j < 5;j++){
+               if ((i+j < 0)||(i - 1 == j)||(i - 2 == j)||(i - 3 == j)||(i - 4 == j)){
+                   System.out.print("  ");
+               }else if((i+j > 8 )){
+                   break;
+               }else{
+                   System.out.print("* ");
+               }
+
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+       System.out.println("===Segitiga===");
+       for(int i = 0;i < 5;i++){
+           for(int j = 0;j < 5;j++){
+               if(i+j < 4){
+                   System.out.print(" ");
+               }else{
+                   System.out.print("* ");
+               }
+
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+
+       System.out.println("=======");
+       for(int i = 0;i < 9; i++){
+           for(int j = 0;j < 9 ; j++){
+               System.out.print("* ");
+               if(i == j){
+                   break;
+               }else if((i+j) == 8)
+                   break;
+           }
+           System.out.print("\n");
+       }
+
+       System.out.println("==Bentuk kipas==");
+       for(int i = 0;i < 9; i++){
+           for(int j = 0;j < 9 ; j++){
+               if((i+j < 8)||(i - 8 == j)||(i - 7 == j)){
+                   System.out.print(" ");
+               }else
+                   System.out.print("* ");
+
+           }
+           System.out.print("\n");
+       }
+       System.out.print("\n");
+
+           // wajik
+       System.out.println("====Wajik====");
+           for(int i = 0; i < 9; i++) {
+               for (int j = 0; j < 9; j++) {
+                   if ((i + j < 4) || (i - 5 == j) || (i - 6 == j) || (i - 7 == j) || (i - 8 == j)) {
+                       System.out.print("  ");
+                   } else if ((j - 5 == i) || (i + j > 12)) {
+                       break;
+                   } else {
+                       System.out.print("* ");
+                   }
+               }
+               System.out.print("\n");
+
+           }
+
+
+
+
+
+    }
+
+}
